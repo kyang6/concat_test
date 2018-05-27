@@ -14,7 +14,7 @@ gulp.task('scripts', function() {
  //    .pipe(concat('scripts_utils.js'))
  //    .pipe(gulp.dest(jsDest));
 
-	gulp.src([jsFiles, jsFilesSimple])
+	return gulp.src([jsFiles, jsFilesSimple])
     .pipe(concat('a.js'))
     .pipe(gulp.dest(jsDest))
     .pipe(rename('scripts.min.js'))
